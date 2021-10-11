@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'do data binding';
+  jsonValue = {
+    a:"Hello",
+    b:"World"
+  };
+
+  newDate = new Date();
 
   handleEvent(){
-    console.log('Button Clicked')
+    console.log('Button Clicked', this.title)
   }
 
 
