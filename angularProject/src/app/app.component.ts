@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'do data binding';
+  title = 'Hello world how are you';
   jsonValue = {
     a:"Hello",
     b:"World"
