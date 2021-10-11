@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StorageService } from './storage.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,12 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    StorageService
+
+  ],
+  //all the services are going to put in this
+  //provider array
   bootstrap: [AppComponent]
 })
 export class AppModule { }
