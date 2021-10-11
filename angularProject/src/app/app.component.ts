@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angularProject';
+  title = 'do data binding';
+
+  handleEvent(){
+    console.log('Button Clicked')
+  }
+
+
+
 }
