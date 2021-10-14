@@ -1,3 +1,4 @@
+
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -12,6 +13,7 @@ export class HttpService {
 
   }
 
+
   getRequest(url: string): Observable<any> {
 
     return this.http.get(url);
@@ -25,6 +27,6 @@ export class HttpService {
   updateRequest(url: string, data: any, option?: any): Observable<any> {
 
     return this.http.put(url, data, option);
-  }
 
+  }
 }
